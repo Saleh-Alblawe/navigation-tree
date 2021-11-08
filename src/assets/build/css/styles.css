@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'DIN Next LT Arabic';
+    src: url('../../fonts/DINNextLTArabic/ArbFONTS-DINNextLTArabic-Regular.ttf') format('truetype');
+}
+
+body {
+    font: normal normal medium DIN Next LT Arabic;
+}
+
+nav.navbar {
+    background-color: #faf9f4;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e0cf97;
+    direction: ltr;
+}
+
+.card {
+    box-shadow: 1px 1px 3px #c5c5c5;
+}
+
+.text-parent {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pen-icon , .plus-icon, .delete-icon {
+    cursor: pointer;
+}
+
+li.list-group-item {
+    border: 0;
+    border-radius: 0 !important;
+    padding: 20px;
+    padding-left: 0;
+    background-color: transparent;
+}
+
+.navigation-tree-chiled {
+    background-color: #eeeeee;
+    border: 1px solid silver;
+    border-left: 0;
+}
+
+.navigation-tree-chiled.chiled-2 {
+    background-color: #e0dcdc;
+}
+
+.navigation-tree-chiled.chiled-3 {
+    background-color: #c4c2c2;
+}
+
+.action-icons {
+    padding-left: 20px;
+}
+
+.navigation-tree-chiled li.list-group-item {
+    border-bottom: 1px solid #979696;
+    padding-bottom: 0;
+}
+
+.navigation-tree-chiled li.list-group-item:last-child {
+    border-bottom: 0;
+}
+
+.fa-chevron-down {
+    cursor: pointer;
+}
+
+.fa-chevron-down:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f077';
+}
+
+.fa-chevron-down.collapsed:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f078';
+}
+
+.modal-header {
+    border-bottom: 0;
+}
+
+.form-control {
+    height: calc(1.5em + 0.75rem + 12px);
+}
+
+.modal-footer {
+    border-top: 0;
+}
+
+.empty_box {
+    width: 13px;
+}
+
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+  }
+  
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
