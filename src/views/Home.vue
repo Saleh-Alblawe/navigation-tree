@@ -191,7 +191,9 @@
                               class="fas fa-trash-alt delete-icon mx-2"
                               @click="deleteLink(linkgrandson.id)"
                             ></i>
-                            <a :href="linkgrandson.url" v-if="typeUser == 'User'"
+                            <a
+                              :href="linkgrandson.url"
+                              v-if="typeUser == 'User'"
                               ><i class="fas fa-external-link-alt"></i
                             ></a>
                           </div>
@@ -459,7 +461,7 @@ export default class Home extends Vue {
   }
 
   isEnglish(event: KeyboardEvent) {
-    if (ValidationServices.isArabic(event.key)) {
+    if (!ValidationServices.isEnglish(event.key)) {
       event.preventDefault();
     }
   }
